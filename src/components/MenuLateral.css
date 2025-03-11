@@ -1,0 +1,80 @@
+/* Fundo escuro */
+.fundo-escuro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 40;
+}
+
+/* Menu lateral */
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #2d3748; /* Cor de fundo */
+  color: white;
+  padding: 20px;
+  z-index: 50;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+/* Quando fechado, o menu fica mais estreito */
+.menu-lateral.fechado {
+  width: 30px; /* Largura reduzida */
+  cursor: pointer; /* Indica que é clicável */
+  padding: 20px 10px; /* Ajuste no padding */
+}
+
+/* Botão de fechar/abrir */
+.botao-fechar {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Lista de links */
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Cada item do menu */
+.menu-lateral ul li {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+/* Links do menu */
+.menu-lateral ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Ícones sempre visíveis */
+.menu-lateral ul li a svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Quando o menu está fechado, esconde os textos */
+.menu-lateral.fechado ul li a span {
+  display: none;
+}

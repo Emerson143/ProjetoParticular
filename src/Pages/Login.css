@@ -1,0 +1,65 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4a6b52 0%, #2f3e46 100%);
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-form {
+  background-color: #f0f0f0;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.5s ease-in-out;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #a8b5a5;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #e6eae3;
+  color: #2f3e46;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #4a6b52;
+  outline: none;
+  box-shadow: 0 0 8px rgba(74, 107, 82, 0.5);
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #4a6b52;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #2f3e46;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
