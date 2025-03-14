@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MenuLateral from "../components/MenuLateral";
+import Container from "../components/Container";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,14 +10,10 @@ export default function Home() {
       {/* Menu lateral */}
       <MenuLateral isOpen={isOpen} setIsOpen={setIsOpen} />
 
-      {/* Container do conteúdo principal respeitando o menu lateral */}
-      <div
-        className={`transition-all duration-300 p-6 flex-1 ${
-          isOpen ? "ml-[200px]" : "ml-[60px]"
-        }`}
-      >
+      {/* Conteúdo principal */}
+      <Container isMenuOpen={isOpen}>
         <h1 className="text-4xl font-bold">Bem-vindo ao Painel</h1>
-      </div>
+      </Container>
     </div>
-  );
+  )
 }

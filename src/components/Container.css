@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  max-width: 1400px;
+  min-width: 95vw;
+  margin: 0 auto;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Quando o menu estiver aberto, empurra o conteúdo */
+.menu-aberto {
+  margin-left: 250px; /* O mesmo valor da largura do menu */
+  width: calc(100% - 250px);
+}
+
+/* Conteúdo do container */
+.container-content {
+  background: rgb(50, 189, 71);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  min-height: calc(100vh - 120px);
+  position: relative;
+  z-index: 1;
+}

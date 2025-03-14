@@ -31,18 +31,6 @@
   padding: 20px 10px; /* Ajuste no padding */
 }
 
-/* Botão de fechar/abrir */
-.botao-fechar {
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Lista de links */
 .menu-lateral ul {
   list-style: none;
